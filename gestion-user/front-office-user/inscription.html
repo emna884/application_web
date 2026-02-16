@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription – Appolart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+
+        <!-- Logo -->
+        <div class="logo-block">
+            <div class="logo">
+                <img src="logo_app.jpg" alt="Appolart" class="logo-img">
+            </div>
+        </div>
+
+        <!-- Bande de couleur -->
+        <div class="header-band">
+            <h2 class="band-title">Créer un compte</h2>
+            <p class="band-sub">Rejoignez la marketplace artisanale tunisienne</p>
+        </div>
+
+        <div class="form-card">
+            <form action="#" method="POST">
+
+                <!-- Prénom + Nom -->
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom"
+                               placeholder="Sana" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom"
+                               placeholder="Ben Ali" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="field-group">
+                    <label for="email">Adresse e-mail *</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="exemple@domaine.com" required>
+                </div>
+
+                <!-- Téléphone -->
+                <div class="field-group">
+                    <label for="tel">Téléphone *</label>
+                    <input type="tel" id="tel" name="telephone"
+                           placeholder="+216 20 000 000" required>
+                </div>
+
+                <!-- Adresse -->
+                <div class="field-group">
+                    <label for="adresse">Adresse de livraison *</label>
+                    <input type="text" id="adresse" name="adresse"
+                           placeholder="Rue, numéro, appartement…" required>
+                </div>
+
+                <!-- Ville + Pays -->
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="ville">Ville *</label>
+                        <input type="text" id="ville" name="ville"
+                               placeholder="Tunis" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="pays">Pays *</label>
+                        <select id="pays" name="pays" required>
+                            <option value="">-- Pays --</option>
+                            <option value="TN" selected>Tunisie</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Allemagne</option>
+                            <option value="IT">Italie</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Mot de passe + Confirmation -->
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="password">Mot de passe *</label>
+                        <input type="password" id="password" name="password"
+                               placeholder="Min. 8 caractères" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="confirm">Confirmer *</label>
+                        <input type="password" id="confirm" name="confirm_password"
+                               placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <!-- CGU -->
+                <label class="checkbox-label">
+                    <input type="checkbox" name="cgu" required>
+                    J'accepte les <a href="#">conditions générales</a>
+                    et la <a href="#">politique de confidentialité</a>
+                </label>
+
+                <!-- Bouton S'inscrire -->
+                <button type="submit" class="btn-submit">Créer mon compte</button>
+
+                <!-- Séparateur -->
+                <div class="divider">
+                    <span>Vous êtes artisan(e) ?</span>
+                </div>
+
+                <!-- Bouton Devenir Artisan -->
+                <a href="demande.html" class="btn-artisan">
+                    Devenir Artisan(e) sur la plateforme
+                </a>
+                <p class="artisan-note">
+                    Vendez vos créations et touchez des clients partout dans le monde.
+                </p>
+
+            </form>
+        </div>
+
+        <p class="bottom-link">Déjà un compte ? <a href="connexion.html">Se connecter</a></p>
+
+    </div>
+
+</body>
+</html>
