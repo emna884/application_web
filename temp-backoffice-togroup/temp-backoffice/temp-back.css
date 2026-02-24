@@ -154,10 +154,6 @@ p { line-height: 1.55; }
   overflow-y: auto;
 }
 
-a.nav-item {
-  text-decoration: none;
-}
-
 .nav-item {
   display: flex;
   align-items: center;
